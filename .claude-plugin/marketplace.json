@@ -1,0 +1,16 @@
+{
+  "name": "msdg-skills",
+  "owner": {
+    "name": "msoareschristeyns-hue"
+  },
+  "metadata": {
+    "description": "Skills de design d'interface et d'animation pour Claude Code."
+  },
+  "plugins": [
+    {
+      "name": "emil-skills",
+      "source": "./",
+      "description": "Skills d'Emil Kowalski pour le design d'interface et l'animation."
+    }
+  ]
+}

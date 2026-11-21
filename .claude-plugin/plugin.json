@@ -1,0 +1,8 @@
+{
+  "name": "emil-skills",
+  "version": "1.0.0",
+  "description": "Skills d'Emil Kowalski pour le design d'interface et l'animation (copie de emilkowalski/skills, licence MIT).",
+  "author": { "name": "Emil Kowalski" },
+  "homepage": "https://github.com/emilkowalski/skills",
+  "license": "MIT"
+}

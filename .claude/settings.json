@@ -1,0 +1,10 @@
+{
+  "extraKnownMarketplaces": {
+    "msdg-skills": {
+      "source": { "source": "github", "repo": "msoareschristeyns-hue/skills" }
+    }
+  },
+  "enabledPlugins": {
+    "emil-skills@msdg-skills": true
+  }
+}

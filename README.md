@@ -7,7 +7,7 @@ Copie des skills d'Emil Kowalski pour le design d'interface et l'animation, prê
 
 ## Contenu
 
-Les 20 skills sont dans `.claude/skills/` : Claude Code les charge automatiquement dans toute session ouverte sur ce dépôt.
+Ce dépôt est un plugin Claude Code (`emil-skills`) et sa marketplace (`msdg-skills`). Les 20 skills sont dans `skills/`.
 
 | Skill | Rôle |
 |---|---|
@@ -32,6 +32,29 @@ Les 20 skills sont dans `.claude/skills/` : Claude Code les charge automatiqueme
 | `ask-emil` | Orienter vers le bon skill |
 | `ask-sonner` | Guide de la bibliothèque Sonner |
 
-## Utiliser ces skills dans un autre projet
+## Utiliser ces skills dans un projet
 
-Copiez les dossiers voulus de `.claude/skills/` dans le `.claude/skills/` de ce projet, ou dans `~/.claude/skills/` pour les avoir partout sur votre machine.
+Ajoutez ceci au fichier `.claude/settings.json` du projet (cloud, ordinateur et application) :
+
+```json
+{
+  "extraKnownMarketplaces": {
+    "msdg-skills": {
+      "source": { "source": "github", "repo": "msoareschristeyns-hue/skills" }
+    }
+  },
+  "enabledPlugins": {
+    "emil-skills@msdg-skills": true
+  }
+}
+```
+
+Ou installez-le une fois pour toutes sur votre ordinateur :
+
+```
+/plugin install emil-skills --marketplace msoareschristeyns-hue/skills
+```
+
+## Mettre à jour depuis le dépôt d'Emil
+
+Recopiez le dossier `skills/` de https://github.com/emilkowalski/skills, puis augmentez `version` dans `.claude-plugin/plugin.json`.
